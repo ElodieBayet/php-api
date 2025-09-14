@@ -1,0 +1,15 @@
+# Local
+Options -Indexes
+
+RewriteEngine on
+
+RewriteRule ^api /index.php [QSA,L]
+
+RewriteCond %{REQUEST_URI} ^/(config|src|templates|vendor|env)
+RewriteRule . /forbidden.php
+
+# Errors
+ErrorDocument 403 /forbidden.php
+ErrorDocument 404 /notfound.php
+ErrorDocument 500 /unavailable.php
+ErrorDocument 503 /unavailable.php
