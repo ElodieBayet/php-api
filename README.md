@@ -1,10 +1,10 @@
 # **PHP & API**
 
-Version | Objectif | Cours | Démo
-------- | -------- | ----- | ----
-2.1 | Andragogie | Labo PHP | -
+Version | Objectif | Domaine | Cadre | Démo
+------- | -------- | ------- | ----- | ----
+2.1 | Andragogie | Programmation | Laboratoire | -
 
-Reupload et correction du support 'PHP & API' daté de janvier 2020.
+Re-upload et correction du support 'PHP & API' daté de janvier 2020.
 
 **N/B** : La retouche et la correction sont toujours en cours. Certaines parties sont susceptibles d'être manquantes.
 
@@ -59,16 +59,16 @@ Le projet illustre les opéartions CRUD via 2 endpoints principaux.
 
 #### Compositors
 
-**Path**
+Path
 - `/api/compositors`
 
-**Méthodes**
+Méthodes
 - `GET`
 - `POST`
 - `UPDATE`
 - `DELETE`
 
-**Fonctionnalités**
+Fonctionnalités
 - Trier
 - Filtrer
 - Rechercher
@@ -76,14 +76,14 @@ Le projet illustre les opéartions CRUD via 2 endpoints principaux.
 
 #### Periods
 
-**Path**
+Path
 - `/api/periods`
 
-**Méthodes**
+Méthodes
 - `GET`
 - `UPDATE`
 
-**Fonctionnalités**
+Fonctionnalités
 - Obtenir les compositeurs pour une période
 
 
@@ -99,16 +99,6 @@ Le projet illustre les opéartions CRUD via 2 endpoints principaux.
 
 
 ### Diagramme logiciel
-
-#### Classes
-
-(en cours de rédaction)
-
-#### État
-
-(en cours de rédaction)
-
-#### Composants
 
 (en cours de rédaction)
 
