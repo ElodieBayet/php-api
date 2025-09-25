@@ -117,17 +117,17 @@ Habituellement, une API fournit un paramètre de recherche générique tel que `
 {
     "data": [
         {
-            "lastname": string,
-            "firstname": string,
-            "birth": date,
-            "death": date,
-            "origin": string,
-            "figure": url | null,
-            "id": int
+            "lastname": "string",
+            "firstname": "string",
+            "birth": "1000-12-31",
+            "death": "1000-12-31",
+            "origin": "string",
+            "figure": "url",
+            "id": 0
         },
         // etc.
     ],
-    "total_items": int
+    "total_items": 0
 }
 ```
 
@@ -141,15 +141,25 @@ Habituellement, une API fournit un paramètre de recherche générique tel que `
 
 ```json
 {
-    "lastname": string,
-    "firstname": string,
-    "death": date,
-    "birth" : date, 
-    "origin": string | null (optional),
-    "figure": url | null (optional),
-    "periods": int[]
+    "lastname": "string",
+    "firstname": "string",
+    "death": "1000-12-31",
+    "birth" : "1000-12-31", 
+    "origin": "string",
+    "figure": "url",
+    "periods": [
+        0
+    ]
 }
 ```
+
+**Required**
+- `lastname`
+- `firstname`
+- `death`
+- `birth`
+- `periods`
+
 
 #### Résultat
 
@@ -157,7 +167,7 @@ Habituellement, une API fournit un paramètre de recherche générique tel que `
 ```json
 {
     "data": {
-        "id" : int
+        "id" : 0
     }
 }
 ```
@@ -223,16 +233,16 @@ En cas d'absence ou de non concordance avec la ou les période(s)
 ```json
 {
     "data": {
-        "lastname": string,
-        "firstname": string,
-        "birth": date,
-        "death": date,
-        "origin": string,
-        "figure": url | null,
+        "lastname": "string",
+        "firstname": "string",
+        "birth": "1000-12-31",
+        "death": "1000-12-31",
+        "origin": "string",
+        "figure": "url",
         "periods": [
-            int
+            0
         ],
-        "id": int
+        "id": 0
     }
 }
 ```
@@ -261,12 +271,12 @@ En cas d'absence ou de non concordance avec la ou les période(s)
 
 ```json
 {
-    "lastname": string (optional),
-    "firstname": string (optional),
-    "death": date (optional),
-    "birth" : date (optional), 
-    "origin": string | null (optional),
-    "figure": url | null (optional),
+    "lastname": "string",
+    "firstname": "string",
+    "death": "1000-12-31",
+    "birth" : "1000-12-31", 
+    "origin": "string",
+    "figure": "url",
 }
 ```
 
@@ -277,16 +287,16 @@ En cas d'absence ou de non concordance avec la ou les période(s)
 ```json
 {
     "data": {
-        "lastname": string,
-        "firstname": string,
-        "birth": date,
-        "death": date,
-        "origin": string,
-        "figure": url | null,
+        "lastname": "string",
+        "firstname": "string",
+        "birth": "1000-12-31",
+        "death": "1000-12-31",
+        "origin": "string",
+        "figure": "url",
         "periods": [
-            int
+            0
         ],
-        "id": int
+        "id": 0
     }
 }
 ```
@@ -382,15 +392,15 @@ _Aucun contenu n'est retourné._
 {
     "data": [
         {
-            "name": string,
-            "begin": int,
-            "end": int,
-            "tag": string,
-            "id": int
+            "name": "string",
+            "begin": 0,
+            "end": 0,
+            "tag": "string",
+            "id": 0
         },
         // etc.
     ],
-    "total_items": int
+    "total_items": 0
 }
 ```
 
@@ -413,12 +423,12 @@ _Aucun contenu n'est retourné._
 ```json
 {
     "data": {
-        "name": string,
-        "begin": int,
-        "end": int,
-        "tag": string,
-        "description": string,
-        "id": int
+        "name": "string",
+        "begin": 0,
+        "end": 0,
+        "tag": "string",
+        "description": "string",
+        "id": 0
     }
 }
 ```
@@ -449,10 +459,10 @@ _Aucun contenu n'est retourné._
 
 ```json
 {
-    "name": string (optional),
-    "begin": int (optional),
-    "end": int (optional),
-    "tag": string (optional),
+    "name": "string",
+    "begin": 0,
+    "end": 0,
+    "tag": "string",
 }
 ```
 
@@ -462,16 +472,16 @@ _Aucun contenu n'est retourné._
 ```json
 {
     "data": {
-        "lastname": string,
-        "firstname": string,
-        "birth": date,
-        "death": date,
-        "origin": string,
-        "figure": url | null,
+        "lastname": "string",
+        "firstname": "string",
+        "birth": "1000-12-31",
+        "death": "1000-12-31",
+        "origin": "string",
+        "figure": "url",
         "periods": [
-            int
+            0
         ],
-        "id": int
+        "id": 0
     }
 }
 ```
@@ -532,19 +542,19 @@ _Aucun contenu n'est retourné._
 ```json
 {
     "data": {
-        "name": string,
-        "begin": int,
-        "end": int,
-        "tag": string,
-        "description": string,
-        "id": int,
+        "name": "string",
+        "begin": 0,
+        "end": 0,
+        "tag": "string",
+        "description": "string",
+        "id": 0,
         "compositors": [
             {
-                "lastname": string,
-                "firstname": string,
-                "birth": date,
-                "death": date,
-                "id": int
+                "lastname": "string",
+                "firstname": "string",
+                "birth": "1000-12-31",
+                "death": "1000-12-31",
+                "id": 0
             },
             // etc.
         ]
