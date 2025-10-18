@@ -4,7 +4,7 @@ Version | Objectif | Domaine | Cadre | Démo
 ------- | -------- | ------- | ----- | ----
 2.1 | Andragogie | Programmation | Laboratoire | -
 
-Re-upload et correction du support 'PHP & API' daté de janvier 2020.
+Reupload et correction du support 'PHP & API' daté de janvier 2020.
 
 **N/B** : La retouche et la correction sont toujours en cours. Certaines parties sont susceptibles d'être manquantes.
 
@@ -31,7 +31,7 @@ Ce support était fourni aux stagiaires ayant accompli le cours "Laboratoire PHP
 ### Prérequis
 
 Cours 
-1. "Informatique général"
+1. "Informatique"
 1. "Algorithmique"
 1. "Programmation PHP"
 1. "Modélisation de base de données"
@@ -57,7 +57,7 @@ Le projet illustre les opéartions CRUD via 2 endpoints principaux.
 
 ### Endpoints
 
-#### Compositors
+#### ▶️ Compositors
 
 Path
 - `/api/compositors`
@@ -74,7 +74,7 @@ Fonctionnalités
 - Rechercher
 
 
-#### Periods
+#### ▶️ Periods
 
 Path
 - `/api/periods`
@@ -89,13 +89,13 @@ Fonctionnalités
 
 ### Base de données
 
-#### Schéma entités-associations
+#### 1️⃣ Schéma entités-associations
 
 <img src="https://demo.elodiebayet.com/php-api/assets/img/schema_entites-associations.jpg" width="429" height="185">
 
-#### Schéma relationel
+#### 2️⃣ Schéma relationnel
 
-![Schéma relationel](https://demo.elodiebayet.com/php-api/assets/img/schema_relationel.jpg)
+![Schéma relationnel](https://demo.elodiebayet.com/php-api/assets/img/schema_relationnel.jpg)
 
 
 ### Diagramme logiciel
@@ -120,7 +120,7 @@ Clônez ce _repository_ dans un répertoire local sur votre machine.
 
 ### Configuration
 
-#### Virtual Host
+#### 1️⃣ Virtual Host
 
 Fichier **httpd-vhosts.conf**
 ```
@@ -142,7 +142,7 @@ Fichier **host**
 ```
 
 
-#### Base de données
+#### 2️⃣ Base de données
 
 Le dossier `_database/` contient les fichiers SQL nécessaires à l'implémentation de la base de données.
 
@@ -151,13 +151,13 @@ Le dossier `_database/` contient les fichiers SQL nécessaires à l'implémentat
 - `3_data_compositor.sql` implémente la table `compositor` (DML). C'est l'entité faible, donc il doit être exécuté après le DML précédent.
 
 
-#### Variables d'environnement
+#### 3️⃣ Variables d'environnement
 
 Dupliquez le fichier `env.template.php` et renommez-le en `env.local.php`. Adaptez les constantes avec des propriétés adéquantes pour votre utilisation locale – en particulier les valeurs de connexion la base de données.
 
 Si vous déployez ce projet en ligne, dupliquez une nouvelle fois le fichier `env.template.php` et renommez-le en `env.php`. Adaptez cette fois les constantes avec des propriétés adaptées pour l'environnement de production. C'est cette version `en.php` doit être déployée sur votre serveur distant. 
 
-**Attention** : ne divulguez jamais vos variables d'environnement publiquement.
+⚠️ **Attention** : ne divulguez jamais vos variables d'environnement publiquement.
 
 
 ---

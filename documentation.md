@@ -1,4 +1,4 @@
-# **PHP & API :** Documenation
+# **PHP & API :** Documentation
 
 Chaque API REST doit être accompagnée d'une documentation. Que l'API soit publique ou privée. Ceci est donc la documentation qui s'adjoint au projet **PHP & API**.
 
@@ -53,11 +53,11 @@ Chaque API REST doit être accompagnée d'une documentation. Que l'API soit publ
 ```
 
 
-### **GET** : Retourner tous les compositeurs
+### `GET` : Retourner tous les compositeurs
 
 #### Paramètres de requête - *Query parameters*
 
-**Trier**
+*️⃣ **Trier**
 
 **`sort`** — Trier par nom_du_champ'. Valeur : `string` obligatoire.
 ```
@@ -71,7 +71,7 @@ Chaque API REST doit être accompagnée d'une documentation. Que l'API soit publ
 ```
 
 
-**Filtrer**
+*️⃣ **Filtrer**
 
 **`born_before`** — Filter antérieurement à la date de naissance. Valeur : `string` obligatoire au format `AAAA-MM-JJ`.
 ```
@@ -94,7 +94,7 @@ Chaque API REST doit être accompagnée d'une documentation. Que l'API soit publ
 ```
 
 
-**Rechercher**
+*️⃣ **Rechercher**
 
 **`origin`** — Rechercher par origine. Valeur : `string` obligatoire.
 ```
@@ -106,13 +106,12 @@ Chaque API REST doit être accompagnée d'une documentation. Que l'API soit publ
 /api/compositors?lastname=schumann
 ```
 
-**Notes**
-Habituellement, une API fournit un paramètre de recherche générique tel que `search`. Cette fonctionnalité n'est pas implémentée ici, mais peut faire l'objet d'un exercice libre. De même que la mise en place d'une recherche par date de naissance ou date de décès.
+**N/B :** Habituellement, une API fournit un paramètre de recherche générique tel que `search`. Cette fonctionnalité n'est pas implémentée ici, mais peut faire l'objet d'un exercice libre. De même que la mise en place d'une recherche par date de naissance ou date de décès.
 
 
 #### Résultat
 
-**200** OK
+🟢 **200** OK
 ```json
 {
     "data": [
@@ -135,7 +134,7 @@ Habituellement, une API fournit un paramètre de recherche générique tel que `
 ---
 
 
-### **POST** : Créer un compositeur
+### `POST` : Créer un compositeur
 
 #### Contenu de la requête - *Body request*
 
@@ -163,7 +162,7 @@ Habituellement, une API fournit un paramètre de recherche générique tel que `
 
 #### Résultat
 
-**201** Created
+🟢 **201** Created
 ```json
 {
     "data": {
@@ -172,7 +171,7 @@ Habituellement, une API fournit un paramètre de recherche générique tel que `
 }
 ```
 
-**400** Bad Request
+🟠 **400** Bad Request
 En cas d'erreur de champs ou de données
 ```json
 {
@@ -207,7 +206,7 @@ En cas d'absence ou de non concordance avec la ou les période(s)
 }
 ```
 
-**500** Internal Server Error
+🔴 **500** Internal Server Error
 ```json
 {
     "errors": {
@@ -220,7 +219,7 @@ En cas d'absence ou de non concordance avec la ou les période(s)
 ---
 
 
-### **GET** : Retourner un compositeur
+### `GET` : Retourner un compositeur
 
 #### Paramètres du chemin - *Path parameters*
 
@@ -229,7 +228,7 @@ En cas d'absence ou de non concordance avec la ou les période(s)
 
 #### Résultat
 
-**200** OK
+🟢 **200** OK
 ```json
 {
     "data": {
@@ -260,7 +259,7 @@ En cas d'absence ou de non concordance avec la ou les période(s)
 ---
 
 
-### **PUT** : Mettre à jour un compositeur
+### `PUT` : Mettre à jour un compositeur
 
 #### Paramètres du chemin - *Path parameters*
 
@@ -283,7 +282,7 @@ En cas d'absence ou de non concordance avec la ou les période(s)
 
 #### Résultat
 
-**200** OK
+🟢 **200** OK
 ```json
 {
     "data": {
@@ -301,7 +300,7 @@ En cas d'absence ou de non concordance avec la ou les période(s)
 }
 ```
 
-**400** Bad Request
+🟡 **400** Bad Request
 ```json
 {
     "errors": {
@@ -319,7 +318,7 @@ En cas d'absence ou de non concordance avec la ou les période(s)
 }
 ```
 
-**404** Not Found
+🟠 **404** Not Found
 ```json
 {
     "errors": {
@@ -328,7 +327,7 @@ En cas d'absence ou de non concordance avec la ou les période(s)
 }
 ```
 
-**500** Internal Server Error
+🔴 **500** Internal Server Error
 ```json
 {
     "errors": {
@@ -341,7 +340,7 @@ En cas d'absence ou de non concordance avec la ou les période(s)
 ---
 
 
-### **DELETE** : Supprimer un compositeur
+### `DELETE` : Supprimer un compositeur
 
 #### Paramètres du chemin - *Path parameters*
 
@@ -350,7 +349,7 @@ En cas d'absence ou de non concordance avec la ou les période(s)
 
 #### Résultat
 
-**204** No Content
+🟢 **204** No Content
 _Aucun contenu n'est retourné._
 
 **404** Not Found
@@ -362,7 +361,7 @@ _Aucun contenu n'est retourné._
 }
 ```
 
-**500** Internal Server Error
+🔴 **500** Internal Server Error
 ```json
 {
     "errors": {
@@ -383,11 +382,11 @@ _Aucun contenu n'est retourné._
 ```
 
 
-### **GET** : Retourner toutes les périodes
+### `GET` : Retourner toutes les périodes
 
 #### Résultat
 
-**200** OK
+🟢 **200** OK
 ```json
 {
     "data": [
@@ -408,7 +407,7 @@ _Aucun contenu n'est retourné._
 ---
 
 
-### **GET** : Retourner une période
+### `GET` : Retourner une période
 
 #### Paramètres du chemin - *Path parameters*
 
@@ -419,7 +418,7 @@ _Aucun contenu n'est retourné._
 
 #### Résultat
 
-**200** OK
+🟢 **200** OK
 ```json
 {
     "data": {
@@ -433,7 +432,7 @@ _Aucun contenu n'est retourné._
 }
 ```
 
-**404** Not Found
+🟠 **404** Not Found
 ```json
 {
     "errors": {
@@ -446,7 +445,7 @@ _Aucun contenu n'est retourné._
 ---
 
 
-### **PUT** : Mettre à jour une période
+### `PUT` : Mettre à jour une période
 
 #### Paramètres du chemin - *Path parameters*
 
@@ -468,7 +467,7 @@ _Aucun contenu n'est retourné._
 
 #### Résultat
 
-**200** OK
+🟢 **200** OK
 ```json
 {
     "data": {
@@ -486,7 +485,7 @@ _Aucun contenu n'est retourné._
 }
 ```
 
-**400** Bad Request
+🟡 **400** Bad Request
 ```json
 {
     "errors": {
@@ -504,7 +503,7 @@ _Aucun contenu n'est retourné._
 }
 ```
 
-**404** Not Found
+🟠 **404** Not Found
 ```json
 {
     "errors": {
@@ -513,7 +512,7 @@ _Aucun contenu n'est retourné._
 }
 ```
 
-**500** Internal Server Error
+🔴 **500** Internal Server Error
 ```json
 {
     "errors": {
@@ -526,7 +525,7 @@ _Aucun contenu n'est retourné._
 ---
 
 
-### **GET** : Retourner une période et tous les compositeurs associés
+### `GET` : Retourner une période et tous les compositeurs associés
 
 #### Paramètres du chemin - *Path parameters*
 
@@ -538,7 +537,7 @@ _Aucun contenu n'est retourné._
 
 #### Résultat
 
-**200** OK
+🟢 **200** OK
 ```json
 {
     "data": {
