@@ -4,8 +4,6 @@
 -- Exécution : 3
 --
 
-USE php_api;
-
 -- Moyen-Âge : 1
 INSERT INTO `compositor` (`id`, `lastname`, `firstname`, `birth`, `death`, `origin`, `figure`)
 VALUES (

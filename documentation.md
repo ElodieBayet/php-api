@@ -59,7 +59,7 @@ Chaque API REST doit être accompagnée d'une documentation. Que l'API soit publ
 
 *️⃣ **Trier**
 
-**`sort`** — Trier par nom_du_champ'. Valeur : `string` obligatoire.
+**`sort`** — Trier par <nom_du_champ>. Valeur : `string` obligatoire.
 ```
 /api/compositors?sort=lastname
 ```
@@ -171,7 +171,7 @@ Chaque API REST doit être accompagnée d'une documentation. Que l'API soit publ
 }
 ```
 
-🟠 **400** Bad Request
+🟡 **400** Bad Request
 En cas d'erreur de champs ou de données
 ```json
 {
@@ -246,7 +246,7 @@ En cas d'absence ou de non concordance avec la ou les période(s)
 }
 ```
 
-**404** Not Found
+🟠 **404** Not Found
 ```json
 {
     "errors": {
@@ -352,7 +352,7 @@ En cas d'absence ou de non concordance avec la ou les période(s)
 🟢 **204** No Content
 _Aucun contenu n'est retourné._
 
-**404** Not Found
+🟠 **404** Not Found
 ```json
 {
     "errors": {

@@ -4,8 +4,6 @@
 -- Exécution : 2
 --
 
-USE php_api;
-
 INSERT INTO `period` (`id`, `name`, `begin`, `end`, `description`, `tag`)
 VALUES (
     1,

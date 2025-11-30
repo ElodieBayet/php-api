@@ -4,8 +4,6 @@
 -- Exécution : 1
 --
 
-USE php_api;
-
 CREATE TABLE `period` (
     `id` SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(32) NOT NULL,

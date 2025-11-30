@@ -13,7 +13,7 @@ Reupload et correction du support 'PHP & API' daté de janvier 2020.
 
 ## Présentation
 
-Ce projet est une **ressource pédagogique** qui sert d'exemple de développement d'API REST en PHP tout en respectant, le principes des opérations CRUD, l'architecture **Model-View-Controller** et le paradigme **Orienté Objet**.
+Ce projet est une **ressource pédagogique** qui sert d'exemple de développement d'API REST en PHP tout en respectant, le principe des opérations CRUD, l'architecture **Model-View-Controller** et le paradigme **Orienté Objet**.
 
 Ce support était fourni aux stagiaires ayant accompli le cours "Laboratoire PHP".
 
@@ -30,7 +30,7 @@ Ce support était fourni aux stagiaires ayant accompli le cours "Laboratoire PHP
 
 ### Prérequis
 
-Cours 
+Cours :
 1. "Informatique"
 1. "Algorithmique"
 1. "Programmation PHP"
@@ -59,16 +59,16 @@ Le projet illustre les opéartions CRUD via 2 endpoints principaux.
 
 #### ▶️ Compositors
 
-Path
+Path :
 - `/api/compositors`
 
-Méthodes
+Méthodes :
 - `GET`
 - `POST`
 - `UPDATE`
 - `DELETE`
 
-Fonctionnalités
+Fonctionnalités :
 - Trier
 - Filtrer
 - Rechercher
@@ -76,14 +76,14 @@ Fonctionnalités
 
 #### ▶️ Periods
 
-Path
+Path :
 - `/api/periods`
 
-Méthodes
+Méthodes :
 - `GET`
 - `UPDATE`
 
-Fonctionnalités
+Fonctionnalités :
 - Obtenir les compositeurs pour une période
 
 
